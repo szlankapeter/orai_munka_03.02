@@ -27,10 +27,21 @@ public class DobasKettoKockaval {
     }
 
     private static void statisztika(int[] adatok) {
+        int maxElofordulas = maximumKivalasztas(adatok);
         for (int i = 0; i < adatok.length; i++) {
             System.out.print(i + " "); //index
             System.out.println("arányos csillagok...");
         }
+    }
+
+    private static int maximumKivalasztas(int[] adatok) {
+        int maxIndex = 0;
+        for (int i = 0; i < adatok.length; i++) {
+            if(adatok[i] > adatok[maxIndex]){
+                maxIndex = i;
+            }
+        }
+        return adatok[maxIndex];
     }
     
 }
