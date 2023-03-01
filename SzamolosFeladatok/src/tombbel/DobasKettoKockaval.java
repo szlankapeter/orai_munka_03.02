@@ -29,10 +29,12 @@ public class DobasKettoKockaval {
     private static void statisztika(int[] adatok) {
         int maxElofordulas = maximumKivalasztas(adatok);
         for (int i = 0; i < adatok.length; i++) {
-            System.out.print(i + " "); //index
-            double arany = adatok[i] / maxElofordulas;
-            egysor(arany);
-            System.out.printf(" (%d db)\n", adatok[i]);
+            if (adatok[i] != 0) {
+                System.out.print(i + " "); //index
+                double arany = adatok[i] / maxElofordulas;
+                egysor(arany);
+                System.out.printf(" (%d db)\n", adatok[i]);
+            }
         }
     }
 
