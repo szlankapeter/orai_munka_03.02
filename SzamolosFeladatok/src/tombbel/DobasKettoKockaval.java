@@ -27,7 +27,10 @@ public class DobasKettoKockaval {
     }
 
     private static void statisztika(int[] adatok) {
-        System.out.println(adatok);
+        for (int i = 0; i < adatok.length; i++) {
+            System.out.print(i + " "); //index
+            System.out.println("arányos csillagok...");
+        }
     }
     
 }
