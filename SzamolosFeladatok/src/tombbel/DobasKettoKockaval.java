@@ -31,7 +31,7 @@ public class DobasKettoKockaval {
         for (int i = 0; i < adatok.length; i++) {
             if (adatok[i] != 0) {
                 System.out.print(i + " "); //index
-                double arany = adatok[i] / maxElofordulas;
+                double arany = (double)adatok[i] / maxElofordulas;
                 egysor(arany);
                 System.out.printf(" (%d db)\n", adatok[i]);
             }
