@@ -30,7 +30,9 @@ public class DobasKettoKockaval {
         int maxElofordulas = maximumKivalasztas(adatok);
         for (int i = 0; i < adatok.length; i++) {
             System.out.print(i + " "); //index
-            System.out.println("arányos csillagok...");
+            double arany = adatok[i] / maxElofordulas;
+            egysor(arany);
+            System.out.printf(" (%d db)\n", adatok[i]);
         }
     }
 
@@ -42,6 +44,15 @@ public class DobasKettoKockaval {
             }
         }
         return adatok[maxIndex];
+    }
+
+    private static void egysor(double arany) {
+        int MAX_CSILLAG = 40;
+        //int db = MAX_CSILLAG * arany;
+        for (int i = 0; i < MAX_CSILLAG * arany; i++) {
+            System.out.print("*");
+        }
+        //System.out.println("");
     }
     
 }
