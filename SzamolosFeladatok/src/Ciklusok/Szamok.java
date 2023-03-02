@@ -17,6 +17,8 @@ public class Szamok {
         Scanner sc = new Scanner(System.in, "latin2");
         System.out.println("Ismetles?(I/N)");
         String valasz = sc.next();
+        int db = 0;
+        
         
         for(int i = 2; i <= 4; i++){
             for(int j = 2; j <= 4; j++){
@@ -26,13 +28,14 @@ public class Szamok {
                     }
                     else{
                         System.out.printf("%d%d%d\n", i, j, k);
+                        db++;
                     }
                     
                 }
             }
         }
         
-        
+        System.out.printf("%d db", db);
         
     }
     
