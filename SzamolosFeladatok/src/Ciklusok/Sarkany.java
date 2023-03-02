@@ -20,7 +20,7 @@ public class Sarkany {
             while(x <= 20){
                 x++;
                 if((x*7)+(y*11) == 145){
-                    System.out.printf("%d %d \n", x, y);
+                    System.out.printf("7 * %d + 11 * %d = 145 \n", x, y);
                 }
             }
             y++;
