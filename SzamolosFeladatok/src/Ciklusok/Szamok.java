@@ -35,7 +35,7 @@ public class Szamok {
             }
         }
         
-        System.out.printf("%d db", db);
+        System.out.printf("Permutacio: %d", db);
         
     }
     
